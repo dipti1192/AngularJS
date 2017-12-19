@@ -4,10 +4,11 @@
     position: absolute;
     background: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 
 header{
-    height: 20%;
+    height: 15%;
     width: 100%;
     background: blue;
     text-align: center;
@@ -15,7 +16,7 @@ header{
 
 .title{
     color: white;
-    padding: 50px;
+    padding: 30px;
 }
 
 .tabs{
@@ -30,6 +31,12 @@ header{
     background: red;
 }
 
+.lower_middle{
+    height: 85%;
+    width: 99.2%;
+    background: grey;
+    margin: 1px;
+}
 footer{
     height: 10%;
     width: 100%;
@@ -42,4 +49,46 @@ article{
     background: yellow;
     display: inline-block;
     margin-left: 2.5px;
+}
+
+/* Desktop View */
+@media (min-width: 992px){
+    header{
+        background: lightblue;
+    }
+
+    .title{
+        color: white;
+    }
+}
+
+/* Tablet View  */
+@media (min-width: 668px) and (max-width: 991px ){
+    header{
+        background: pink;
+    }
+
+    .title{
+        color: white;
+    }
+    
+}
+
+/* Mobile View */
+@media (max-width: 667px){
+    header{
+        height: 10%;
+        background: grey;
+    }
+
+    article{
+        width: 49%;
+        margin: 2px;
+        /* background: pink; */
+    }
+
+    .title{
+        color: white;
+        padding: 10px;
+    }
 }
